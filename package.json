@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "compromise": "^14.15.1",
-    "next": "^15.5.4",
+    "next": "^16.2.9",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
