@@ -45,4 +45,4 @@ client-side, etc.). A few highlights:
 
 Wordsmither intentionally stays free and fully local. Proposals that add a
 backend, a paid API, or telemetry are out of scope unless discussed first in an
-issue. See [`TODO.md`](TODO.md) for the current roadmap.
+issue.

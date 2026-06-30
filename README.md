@@ -22,8 +22,7 @@ The only user-facing configuration is which rules are **enabled** for an
 analysis — there is no rule-builder UI by design.
 
 > Earlier prototypes included optional LLM-backed style rules; that path was
-> removed to keep the app free and fully local. See `TODO.md` if/when we revisit
-> it.
+> removed to keep the app free and fully local — revisit it only deliberately.
 
 ### Architecture
 

@@ -4,7 +4,7 @@ A local-only, **zero-cost** writing-analysis web app. Paste text, toggle rules,
 get findings highlighted inline plus an Overview tab of stats. **No backend, no
 API, no AI** — everything runs deterministically in the browser. (AI was
 prototyped then removed; only revisit it deliberately — the user wants the app
-free. See `TODO.md`.)
+free.)
 
 ## Run / verify
 

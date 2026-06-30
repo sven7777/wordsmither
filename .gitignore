@@ -11,6 +11,9 @@
 # misc
 .DS_Store
 
+# local, private notes (not part of the public repo)
+TODO.md
+
 # env
 .env
 .env.local
