@@ -16,8 +16,31 @@
 - ✅ Live toggle: highlight all sentence-opening pronouns (violet layer,
   `lib/highlights.ts`).
 - ✅ Hid the Next.js dev indicator (`devIndicators: false`).
+- ✅ **Went public on GitHub** (2026-06-29) — `sven7777/wordsmither`, MIT
+  license, polished README with screenshot (`docs/screenshot.png`).
+- ✅ **DreamHost-ready static export** — `next.config.ts` `output: "export"`
+  (+ `trailingSlash`, `images.unoptimized`); `npm run build` emits `./out`.
+- ✅ **Repo polish** — CI (`typecheck` + build on push/PR), Dependabot,
+  `.nvmrc`/`engines`, OG/Twitter metadata + favicon (`app/icon.svg`),
+  CONTRIBUTING/SECURITY/issue+PR templates.
 
 ## Next up
+
+### 0. Deploy to DreamHost (www.wordsmither.com)
+- Domain registered; DNS/host setup + **new SFTP user were still pending**.
+- Once we have **SFTP user / host / web-path**: `npm run build`, then
+  rsync/SFTP the **contents of `out/`** up. Add an `npm run deploy` script
+  (rsync `--delete out/ user@host:/path/`). See README "Deploy".
+- ⚠️ Don't `npm run build` while `npm run dev` is running (shared `.next`).
+
+### 0b. Repo follow-ups
+- **OG preview image** — metadata has OG/Twitter *text* but no image. Add a
+  1200×630 to `openGraph.images` and switch `twitter.card` to
+  `summary_large_image`.
+- **Dependabot majors** — review before merging: TypeScript 6, `@types/node`
+  26, Next 16 (CI-green ≠ runtime-safe for majors).
+
+### 1. Apply-suggestion action
 
 ### 1. Apply-suggestion action
 Findings carry `suggestion` + `start`/`end` offsets.
