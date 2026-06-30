@@ -4,6 +4,8 @@ A writing-analysis web app. Paste up to ~4,000 words and check it against style
 standards and configurable custom rules. Everything runs **locally in the
 browser** — there is no backend, no API, and no cost to run.
 
+![Wordsmither — editor with inline findings, a grouped findings list, and per–rule-set toggles](docs/screenshot.png)
+
 ## How it works
 
 Every rule is **deterministic**: a pure function over the text that runs
